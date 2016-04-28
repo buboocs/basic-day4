@@ -20,6 +20,9 @@ $link2 = Yii::$app->urlManager->createUrl([
 $link3 = Yii::$app->urlManager->createUrl([
     'kpi/kpi3',
     ]);
+$link4 = Yii::$app->urlManager->createUrl([
+    'kpi/kpi4',
+    ]);
 ?>
 
 <a href="<?= $link1 ?>">1.แสดงผลตัวชี้วัดที่ QOF</a>
@@ -27,4 +30,6 @@ $link3 = Yii::$app->urlManager->createUrl([
 <a href="<?= $link2 ?>">2.แสดงผลลัพธ์ตัวชี้วัดที่ QOF</a>
 <br/>
 <a href="<?= $link3 ?>">3.ตัวชี้วัดที่ QOF</a>
+<br/>
+<a href="<?= $link4 ?>">3.ตัวชี้วัดที่ QOF_kartik</a>
 <hr />
