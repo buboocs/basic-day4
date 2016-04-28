@@ -1,3 +1,7 @@
+<?php
+$this->title = 'Page1';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 <h1>My First Page1</h1>
 <hr />
 ทดสอบ github
@@ -7,3 +11,4 @@
 <?php echo 'ฉันชื่อ วิโรจน์ ธัชศฤงคารสกุล แบบ php'; ?>
 <hr />
 <?= 'ฉันชื่อ วิโรจน์ ธัชศฤงคารสกุล อีกแบบ'; ?>
+<?php YII::$app->db->open() ?>

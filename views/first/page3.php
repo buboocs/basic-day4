@@ -1,4 +1,6 @@
 <?php
+$this->title = 'Page3';
+$this->params['breadcrumbs'][] = $this->title;
 
 $arr1 = array(1,2,3);
 print_r($arr1);

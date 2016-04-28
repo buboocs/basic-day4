@@ -33,7 +33,7 @@ MaterialAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'สบรส',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-default navbar-fixed-top',
@@ -43,7 +43,14 @@ MaterialAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
+             ['label' => 'Report', 'items' => [ 
+                 ['label' => 'My First Page', 'url' => ['/first/index']],
+                 ['label' => 'page2', 'url' => ['/first/page2']],
+                 ['label' => 'page3', 'url' => ['/first/page3']],
+                 ['label' => 'page4', 'url' => ['/first/page4']],
+                 ]],
             ['label' => 'About', 'url' => ['/site/about']],
+              ['label' => 'Test', 'url' => ['/first/page1']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
@@ -72,7 +79,7 @@ MaterialAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; suttisak <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>

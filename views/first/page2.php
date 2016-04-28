@@ -1,5 +1,8 @@
 <?php
 
+$this->title = 'Page2';
+$this->params['breadcrumbs'][] = $this->title;
+
 echo $hello;
 echo "<hr />";
 echo $a;

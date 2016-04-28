@@ -1,4 +1,6 @@
 <?php
+$this->title = 'Page4';
+$this->params['breadcrumbs'][] = $this->title;
 
 echo $name;
 echo "<hr />";
