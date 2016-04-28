@@ -18,10 +18,12 @@ class ChartController extends \yii\web\Controller
     }
          public function actionChart3()
     {
+        $y = isset($_REQUEST['year'])?$_REQUEST['year']:date('Y');
+        $ycal = $y + 543;
         $sql = "SELECT  k.kpiname,k.acol,k.bcol,k.target,d.divide,d.denom,d.byear,(d.divide*100)/d.denom as result
                 FROM kpi k
                 join kpidata d on k.id = d.kpiid
-                WHERE d.byear = 2559 and k.target > 0";
+                WHERE d.byear = $ycal and k.target > 0";
         $data = \Yii::$app->db->createCommand($sql)->queryAll();
         $dataProvider = new ArrayDataProvider([
             'allModels'=>$data
