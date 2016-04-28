@@ -1,5 +1,5 @@
 <?php
-$this->title = 'kpi1';
+$this->title = 'kpi2';
 $this->params['breadcrumbs'][] = [
     'label' => 'kpi',
     'url' => ['/kpi/index',]
@@ -9,7 +9,17 @@ use yii\grid\GridView;
 ?>
 <?= GridView::widget([
     'dataProvider' => $dataProvider,
+    //สีที่เมาส์
     'tableOptions' => ['class' => 'table table-striped table-bordered table-responsive table-hover'],
-    'headerRowOptions'=> ['class'=>'success']
+    
+    //สี หัวฟิว
+    'headerRowOptions'=> ['class'=>'success'],
+    'columns' => [
+        'kpiname',
+        'divide',
+        'denom',
+        'result',
+        'target'
+        ]
 ]);
 ?>
