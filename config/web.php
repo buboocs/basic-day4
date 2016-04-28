@@ -48,14 +48,16 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
+        //แก้ link url 
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'หน้าแรก'=>'site/index',
+                'เกี่ยวกับเรา'=>'site/about'
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
